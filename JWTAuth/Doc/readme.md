@@ -1,7 +1,5 @@
-# JWTAuth
-JWT Authentication on .Net Core API
-
 # JSON Web Tokens (JWT)
+**Renewal Date**: 2024.03
 
 ``JWT_SECRET_KEY``: Your secret key for signing the JWT tokens  
 ``JWT_ALGORITHM``: The algorithm used for signing the JWT tokens (e.g., 'HS256')  

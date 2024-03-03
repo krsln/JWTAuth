@@ -25,7 +25,7 @@ public class TokenService(IOptions<AppSettingsOptions> appSettings) : ITokenServ
         if (_appSettings.Jwt != null)
         {
             // https://medium.com/@vndpal/how-to-implement-jwt-token-authentication-in-net-core-6-ab7f48470f5c
-            var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_appSettings.Jwt.Key));
+            var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_appSettings.Jwt.SecretKey));
             var signingCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256);
             var securityToken = new JwtSecurityToken(_appSettings.Jwt.Issuer, _appSettings.Jwt.Audience,
                 claims: new List<Claim>

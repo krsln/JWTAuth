@@ -16,5 +16,5 @@ public class JwtOption
     public string Audience { get; set; } = String.Empty;
     public string Issuer { get; set; } = String.Empty;
     
-    public string Key { get; set; } = String.Empty;
+    public string SecretKey { get; set; } = String.Empty;
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JWTAuth</name>
+    </assembly>
+    <members>
+        <member name="P:JWTAuth.Services.TokenResponse.TokenExpireIn">
+            <summary>
+            In minutes. 
+            </summary>
+        </member>
+        <member name="P:JWTAuth.Services.TokenRequest.ExpireIn">
+            <summary>
+            In minutes. Default is `120`
+            </summary>
+        </member>
+    </members>
+</doc>
